@@ -72,11 +72,11 @@ nav ul li a:hover::before {
 
 .social ul li a {
     display: inline-block; 
-    color:var(--secondary-color);
+    color: var(--secondary-color);
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none;
-    /* transition: ; */
+    transition: all 0.3s ease; 
 }
 
 .social ul li .icon-facebook {background:#3b5998;} 
@@ -86,10 +86,9 @@ nav ul li a:hover::before {
 .social ul li .icon-mail {background: #666666;}
 
 .social ul li a:hover{
-    /* transform: ; */
-    /* padding: ; */
+    transform: translateX(10px) scale(1.1);
+    padding-right: 25px;
 }
-
 
   /* Contenido */
 .container{
