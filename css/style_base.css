@@ -33,8 +33,6 @@ nav ul {
     display: flex; 
     justify-content: center;
     list-style: none;
-    /* padding: 0px;
-    margin-left: 10px;          NO son necesarias porque usamos flex*/
 }
 nav ul li {
     margin: 20px;
@@ -51,7 +49,7 @@ nav ul li a:before {
     content: '';
     background: var(--decoration-color);
     position: absolute;
-    bottom: -10px; 
+    bottom: -5px; 
     left: 0;       
     height: 3px;    
     width: 0;        
@@ -62,11 +60,10 @@ nav ul li a:hover::before {
     width: 100%;    
 }
 
-/* Barra redes */
 .social {
 	position: fixed; 
 	left: 0; 
-	top: calc(50% - 90px); /* Para que quede centrada le decimos que al 50% del alto le reste la mitad del alto de la barra: 16px de la letra + 10 padding-top + 10padding-bottom */
+	top: calc(50% - 90px); 
 	z-index: 2000; 
 }
 .social ul {
@@ -74,7 +71,7 @@ nav ul li a:hover::before {
 }
 
 .social ul li a {
-    display: inline-block; /* porque le quiero agregar padding */
+    display: inline-block; 
     color:var(--secondary-color);
     background: var(--primary-color);
     padding: 10px 15px;
@@ -82,7 +79,7 @@ nav ul li a:hover::before {
     /* transition: ; */
 }
 
-.social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .icon-facebook {background:#3b5998;} 
 .social ul li .icon-twitter {background: #00abf0;}
 .social ul li .icon-instagram {background: #E4405F;}
 .social ul li .icon-whatsapp {background: #25D366;}
